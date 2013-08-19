@@ -1,0 +1,16 @@
+services:
+    acme.user_provider:
+        class: Acme\WebBundle\Security\Provider\UserProvider
+        public: false
+        arguments: ["@fos_user.user_manager"]
+
+    acme.user_repository:
+        class: Acme\WebBundle\Entity\UserRepository
+        factory_service: doctrine
+        factory_method: getRepository
+        arguments: ["AcmeWebBundle:User"]
+
+    acme.form.handler.registration:
+        class: Acme\WebBundle\Form\Handler\RegistrationFormHandler
+        parent: fos_user.registration.form.handler.default
+        scope: request

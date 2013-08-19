@@ -1,0 +1,11 @@
+#_acme_web:
+#    resource: "@AcmeWebBundle/Controller/"
+#    type:     annotation
+#    prefix:   /
+
+_acme_user:
+    resource: "@AcmeWebBundle/Resources/config/routing.yml"
+
+_imagine:
+    resource: .
+    type:     imagine

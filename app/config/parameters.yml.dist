@@ -1,15 +1,19 @@
+# This file is auto-generated during the composer install
 parameters:
-    database_driver:   pdo_mysql
-    database_host:     127.0.0.1
-    database_port:     ~
-    database_name:     symfony
-    database_user:     root
-    database_password: ~
-
-    mailer_transport:  smtp
-    mailer_host:       127.0.0.1
-    mailer_user:       ~
-    mailer_password:   ~
-
-    locale:            en
-    secret:            ThisTokenIsNotSoSecretChangeIt
+    database_driver: pdo_mysql
+    database_host: localhost
+    database_port: null
+    database_name: symfony_example
+    database_user: root
+    database_password: root
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: null
+    mailer_password: null
+    mailer_from_email: admin@acme.org
+    mailer_from_name: 'Acme Team'
+    secret: 46d9f4a8-59a8-4ad7-9280-7d8c22d44b93
+    remember_me.secret: 94421924-dw46-43as-995f-ccd8ef11ca31
+    locale: en
+    force_ssl: false
+    google_analytics: { ga_key: null, ga_test: null }
